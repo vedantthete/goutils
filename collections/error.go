@@ -15,3 +15,11 @@ type NotFoundError struct {
 func (n *NotFoundError) Error() string {
 	return n.message
 }
+
+type EmptyDequeError struct {
+	message string
+}
+
+func (e *EmptyDequeError) Error() string {
+	return e.message
+}
