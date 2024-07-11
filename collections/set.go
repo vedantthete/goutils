@@ -1,4 +1,4 @@
-package collections
+package goutils
 
 import (
 	"fmt"
@@ -18,6 +18,11 @@ func (s *Set[T]) Length() int {
 
 func (s *Set[T]) Add(element T) {
 	s.container[element] = struct{}{}
+}
+
+func (s *Set[T]) Has(element T) bool {
+	_, exists := s.container[element]
+	return exists
 }
 
 func (s *Set[T]) Remove(element T) error {

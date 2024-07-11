@@ -1,4 +1,4 @@
-package collections
+package goutils
 
 type Node[T any] struct {
 	value T

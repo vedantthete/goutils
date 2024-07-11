@@ -1,4 +1,4 @@
-package collections
+package goutils
 
 import (
 	"fmt"

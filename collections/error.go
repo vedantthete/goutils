@@ -1,4 +1,4 @@
-package collections
+package goutils
 
 type IndexError struct {
 	message string
